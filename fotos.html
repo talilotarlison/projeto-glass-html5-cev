@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fotos</title>
+    <link rel="stylesheet" href="./_css/estilo.css">
+    <link rel="stylesheet" href="./_css/fotos.css">
+</head>
+
+<body>
+    <div id="interface">
+        <header id="cabecalho">
+            <!-- hgroup serve para agrupar titulos que se completam -->
+            <hgroup>
+                <h1>Google Glass</h1>
+                <h2>A revolução do Google está chegando</h2>
+            </hgroup>
+            <img id="icone" src="./_imagens/glass-oculos-preto-peq.png" title="Google Glass" alt="Google Glass">
+            <nav id="menu">
+                <h1>Menu Principal</h1>
+                <ul>
+                    <li>
+                        <a href="./index.html" target="_self" onmouseover="mudaFotoMenu('home')"
+                            onmouseout="mudaFotoMenu('fotos')">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./specs.html" target="_self" onmouseover="mudaFotoMenu('especificacoes')"
+                            onmouseout="mudaFotoMenu('fotos')">
+                            Especificações
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./fotos.html" target="_self" onmouseover="mudaFotoMenu('fotos')"
+                            onmouseout="mudaFotoMenu('fotos')">
+                            Fotos
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./multimidia.html" target="_self" onmouseover="mudaFotoMenu('multimidia')"
+                            onmouseout="mudaFotoMenu('fotos')">
+                            Multimídia
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./fale-conosco.html" target="_self" onmouseover="mudaFotoMenu('contato')"
+                            onmouseout="mudaFotoMenu('fotos')">
+                            Fale conosco
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+        </header>
+
+        <section id="corpo-full">
+            <article id="noticia-principal">
+                <header id="cabecalho-artigo">
+                    <hgroup>
+                        <h3> Glass &nbsp;> &nbsp; Fotos</h3>
+                        <h1> Galeria de Imagens do Google Glass</h1>
+                        <h2>por Gustavo Guanabara</h2>
+                        <h3 class="atualizacao">Atualizado em 01/Maio/2013</h3>
+                    </hgroup>
+                </header>
+                <h2>Todas as fotos</h2>
+                <p>Veja na nossa galeria de fotos várias belas imagens que mostram algumas das principais
+                    características
+                    do Google
+                    Glass, como recursos e propriedades que estão impressionando o mundo inteiro. Basta passar o mouse
+                    sobre
+                    uma das
+                    fotos para ver uma versão ampliada e com uma breve descrição.</p>
+                <ul id="album-foto">
+                    <li id="foto-01"><span>Agenda e lembretes</spam></li>
+                    <li id="foto-02"><span>Sergey Brin usando o Glass</spam></li>
+                    <li id="foto-03"><span>Leve e compacto</spam></li>
+                    <li id="foto-04"><span>Sensação de uma tela de 50"</spam></li>
+                    <li id="foto-05"><span>Vários tipos de lente</spam></li>
+                    <li id="foto-06"><span>Informações importantes</spam></li>
+                </ul>
+
+            </article>
+        </section>
+        <footer>
+            <p>Copyright &copy; 2013 - by Gustavo Guanabara <br> <a href="#" target="_blank">Facebook</a> | <a href="#"
+                    target="_blank">Twitter</a></p>
+        </footer>
+    </div>
+</body>
+<script src="./_javascript/app.js"></script>
+
+</html>

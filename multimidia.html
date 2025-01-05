@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimídia</title>
+    <link rel="stylesheet" href="./_css/estilo.css">
+    <link rel="stylesheet" href="./_css/media.css">
+</head>
+
+<body>
+    <div id="interface">
+        <header id="cabecalho">
+            <!-- hgroup serve para agrupar titulos que se completam -->
+            <hgroup>
+                <h1>Google Glass</h1>
+                <h2>A revolução do Google está chegando</h2>
+            </hgroup>
+            <img id="icone" src="./_imagens/glass-oculos-preto-peq.png" title="Google Glass" alt="Google Glass">
+            <nav id="menu">
+                <h1>Menu Principal</h1>
+                <ul>
+                    <li>
+                        <a href="./index.html" target="_self" onmouseover="mudaFotoMenu('home')"
+                            onmouseout="mudaFotoMenu('multimidia')">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./specs.html" target="_self" onmouseover="mudaFotoMenu('especificacoes')"
+                            onmouseout="mudaFotoMenu('multimidia')">
+                            Especificações
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./fotos.html" target="_self" onmouseover="mudaFotoMenu('fotos')"
+                            onmouseout="mudaFotoMenu('multimidia')">
+                            Fotos
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./multimidia.html" target="_self" onmouseover="mudaFotoMenu('multimidia')"
+                            onmouseout="mudaFotoMenu('multimidia')">
+                            Multimídia
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./fale-conosco.html" target="_self" onmouseover="mudaFotoMenu('contato')"
+                            onmouseout="mudaFotoMenu('multimidia')">
+                            Fale conosco
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+        </header>
+        <section id="corpo-full">
+            <article id="noticia-principal">
+                <header id="cabecalho-artigo">
+                    <hgroup>
+                        <h3> Glass &nbsp;> &nbsp; Multimídia</h3>
+                        <h1> Sons e Vídeos</h1>
+                        <h2>por Gustavo Guanabara</h2>
+                        <h3 class="atualizacao">Atualizado em 01/Maio/2013</h3>
+                    </hgroup>
+                </header>
+                <h2>Áudio e Vídeo</h2>
+                <div id="tv-radio">
+                    <audio id="musica" controls="controls">
+                        <source src="./_media/2009-lovers-carvings-bibio.mp3" type="audio/mpeg">
+                        Desculpe não foi possivel carregar video.
+                    </audio>
+                    <video src="./_media/getting-started.mp4" id="filme"  type="videoo/mp4" controls="controls" poster="./_imagens/video-mini03.jpg">
+                        Desculpe não foi possivel carregar video.
+                    </video>
+                </div>
+            </article>
+        </section>
+        <footer>
+            <p>Copyright &copy; 2013 - by Gustavo Guanabara <br> <a href="#" target="_blank">Facebook</a> | <a href="#"
+                    target="_blank">Twitter</a></p>
+        </footer>
+    </div>
+</body>
+<script src="./_javascript/app.js"></script>
+
+</html>

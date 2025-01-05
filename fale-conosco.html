@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fale conosco</title>
+    <link rel="stylesheet" href="./_css/estilo.css">
+    <link rel="stylesheet" href="./_css/form.css">
+</head>
+
+<body>
+    <div id="interface">
+        <header id="cabecalho">
+            <!-- hgroup serve para agrupar titulos que se completam -->
+            <hgroup>
+                <h1>Google Glass</h1>
+                <h2>A revolução do Google está chegando</h2>
+            </hgroup>
+            <img id="icone" src="./_imagens/glass-oculos-preto-peq.png" title="Google Glass" alt="Google Glass">
+            <nav id="menu">
+                <h1>Menu Principal</h1>
+                <ul>
+                    <li>
+                        <a href="./index.html" target="_self" onmouseover="mudaFotoMenu('home')"
+                            onmouseout="mudaFotoMenu('contato')">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./specs.html" target="_self" onmouseover="mudaFotoMenu('especificacoes')"
+                            onmouseout="mudaFotoMenu('contato')">
+                            Especificações
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./fotos.html" target="_self" onmouseover="mudaFotoMenu('fotos')"
+                            onmouseout="mudaFotoMenu('contato')">
+                            Fotos
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./multimidia.html" target="_self" onmouseover="mudaFotoMenu('multimidia')"
+                            onmouseout="mudaFotoMenu('contato')">
+                            Multimídia
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./fale-conosco.html" target="_self" onmouseover="mudaFotoMenu('contato')"
+                            onmouseout="mudaFotoMenu('contato')">
+                            Fale conosco
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+        </header>
+
+        <section id="corpo-full">
+            <article id="noticia-principal">
+                <header id="cabecalho-artigo">
+                    <hgroup>
+                        <h3> Fale Conosco &nbsp;> &nbsp; Contato</h3>
+                        <h1> Formulário de Contato</h1>
+                        <h2>por Gustavo Guanabara</h2>
+                        <h3 class="atualizacao">Atualizado em 01/Maio/2013</h3>
+                    </hgroup>
+                </header>
+                <h2>Fomulario de contato</h2>
+                <form action="form.php" method="post" oninput="calcularTotal();">
+                    <fieldset id="usuario">
+                        <legend>Identificação do Usuário</legend>
+                        <div>
+                            <label for="nome"> Nome:</label>
+                            <input type="text" placeholder="Insira seu nome completo" id="nome" name="nome" size="20"
+                                maxlength="30">
+                        </div>
+                        <div>
+                            <label for="senha"> Senha:</label>
+                            <input type="password" placeholder="Insira sua senha" id="senha" name="senha" size="20"
+                                maxlength="30">
+                        </div>
+                        <div>
+                            <label for="email"> E-mail:</label>
+                            <input type="email" placeholder="Insira seu E-mail" id="email" name="email" size="20"
+                                maxlength="100">
+                        </div>
+
+                        <fieldset id="sexo-fielset">
+                            <legend>Sexo:</legend>
+                            <div>
+                                <input type="radio" id="masculino" name="sexo">
+                                <label for="masculino"> Masculino</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="feminino" name="sexo">
+                                <label for="feminino"> Feminino</label>
+                            </div>
+                        </fieldset>
+                        <div>
+                            <label for="data"> Data de Nascimento:</label>
+                            <input type="date" id="data" name="data">
+                        </div>
+
+
+                    </fieldset>
+                    <fieldset id="endereco">
+                        <legend>Endereço do Usuário</legend>
+
+
+                        <div>
+                            <label for="rua"> Logradouro:</label>
+                            <input type="text" placeholder="Insira seu nome rua ou avenida" id="rua" name="rua"
+                                size="20" maxlength="30">
+                        </div>
+
+                        <div>
+                            <label for="numero"> Número:</label>
+                            <input type="number" placeholder="Insira numero rua" id="numero" name="numero" min="2"
+                                max="8">
+                        </div>
+
+                        <div>
+                            <label for="estado"> Estado:</label>
+                            <select id="estado" name="estado">
+                                <option disabled selected>Escolha Estado</option>
+                                <optgroup label="Suldeste">
+                                    <option value="pr"> Parana</option>
+                                    <option value="rj">Rio de Janeiro</option>
+                                </optgroup>
+                                <optgroup label="Nodeste">
+                                    <option value="pi">Piaui</option>
+                                    <option value="ce">Ceara</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="cidade"> Cidade:</label>
+                            <input type="text" placeholder="Insira sua cidade" id="cidade" name="cidade" size="20"
+                                maxlength="40" list="cidade-data">
+                                <datalist id="cidade-data">
+                                    <option value="Rio Janeiro"></option>
+                                    <option value="Sao Paulo"></option>
+                                    <option value="Teresina"></option>
+                                </datalist>
+                        </div>
+                    </fieldset>
+                    <fieldset id="mensagem">
+                        <legend>Mensagem do Usuário</legend>
+                        <div>
+                            <label for="msg"> Grau de Urgência:</label>
+                            <input type="range" min="0" max="10" step="2" >
+                        </div>
+                        <div>
+                            <label for="msg"> Mensagem:</label>
+                            <textarea name="msg" id="msg" cols="45" rows="10"></textarea>
+                        </div>
+                    </fieldset>
+                    <fieldset id="pedido">
+                        <legend>Quero um Google Glass</legend>
+                        <div>
+                            <input type="checkbox" id="aceite" checked>
+                            <label for="aceite"> Gostaria de adquirir um Google Glass quando disponível</label>
+                        </div>
+                        <div>
+                            <label for="cor"> Cor:</label>
+                            <input type="color" id="cor" value="#0000ff">
+                        </div>
+                        <div>
+                            <label for="quantidade">  Quantidade:</label>
+                            <input type="number" min="1" max="100" value="0" id="quantidade">
+                        </div>
+                        <div>
+                            <label for="totalPagar"> Preço Total: R$</label>
+                            <input type="text" min="1" max="100" placeholder="Total a pagar" id="totalPagar">
+                        </div>
+                    </fieldset>
+                    <input type="submit" value="Enviar Dados">
+                </form>
+            </article>
+        </section>
+        <footer>
+            <p>Copyright &copy; 2013 - by Gustavo Guanabara <br> <a href="#" target="_blank">Facebook</a> | <a href="#"
+                    target="_blank">Twitter</a></p>
+        </footer>
+    </div>
+</body>
+<script src="./_javascript/funcoes.js"></script>
+
+</html>

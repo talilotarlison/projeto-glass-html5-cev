@@ -1,0 +1,258 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+@font-face {
+    font-family: "font-logo";
+    src: url("../_fonts/bubblegum-sans-regular.otf");
+}
+
+body {
+    background-color: #ddd;
+    color: rgba(0, 0, 0, 1);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body a {
+    color: #606060;
+    text-decoration: none;
+}
+
+body a:hover {
+    text-decoration: underline;
+}
+
+div#interface {
+    width: 900px;
+    margin: -20px auto;
+    background-color: white;
+    box-shadow: 0px 0px 10px gray;
+    padding: 20px;
+}
+
+header#cabecalho {
+    border-bottom: 1px solid #606060;
+    height: 150px;
+    background: url("../_imagens/glass-logo-peq.jpg") 0px 100px;
+    background-repeat: no-repeat;
+    position: relative;
+
+}
+
+header#cabecalho h1 {
+    font-family: "font-logo", sans-serif;
+    font-size: 30pt;
+    color: #606060;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .6);
+    padding: 0;
+    margin-bottom: 0px;
+}
+
+header#cabecalho h2 {
+    font-family: "Titillium Web", serif;
+    color: #888;
+    font-size: 15pt;
+    padding: 0;
+    margin-top: 0px;
+}
+
+header#cabecalho img#icone {
+    position: absolute;
+    left: 760px;
+    top: 40px;
+    width: 150px;
+    height: 120px;
+}
+
+p {
+    text-align: justify;
+    text-indent: 50px;
+}
+
+/* formatacao das imagens */
+figure.foto-legenda {
+    border: 8px solid white;
+    box-shadow: 1px 1px 4px black;
+    position: relative;
+}
+
+figure.foto-legenda img {
+    width: 100%;
+    height: 100%;
+}
+
+figure.foto-legenda figcaption {
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, .4);
+    color: white;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    opacity: 0;
+    font-size: 18px;
+    transition: opacity 1s;
+}
+
+figure.foto-legenda figcaption:hover {
+    opacity: 10;
+}
+
+/* formatacao do menu */
+nav#menu {
+    text-transform: uppercase;
+    display: block;
+    
+}
+
+nav#menu>h1 {
+    display: none;
+}
+
+nav#menu>ul {
+    list-style-type: none;
+    position: absolute;
+    top: -53px;
+    left: 200px;
+    width: 900px;
+}
+
+nav#menu>ul>li {
+    display: inline-block;
+    background-color: #ddd;
+    padding: 10px;
+    margin: 2px;
+    transition: background-color 1s;
+}
+
+nav#menu>ul>li:hover {
+    background-color: #606060;
+    text-decoration: underline;
+}
+
+nav#menu>ul>li a {
+    text-decoration: none;
+    color: #00000097;
+    font-family: sans-serif;
+}
+
+/* sessao do site */
+section {
+    display: block;
+    width: 530px;
+    float: left;
+    border-right: solid 1px gray;
+    padding-right: 15px;
+}
+
+section #noticia-principal h2 {
+    font-size: 12pt;
+    color: #606060;
+    background-color: #ddd;
+    padding: 5px;
+}
+
+section #cabecalho-artigo h1 {
+    font-family: "font-logo", sans-serif;
+    font-size: 20pt;
+    color: #606060;
+    margin: 0px;
+}
+
+section #cabecalho-artigo h2 {
+    font-size: 13pt;
+    color: #cecece;
+    background-color: #fff;
+    padding: 0px;
+    margin: 0px;
+}
+
+section #cabecalho-artigo h3 {
+    font-size: 12pt;
+    color: #606060;
+}
+
+h3.atualizacao {
+    font-size: 10pt !important;
+    text-align: right;
+}
+
+/* tabela */
+
+table {
+    border: solid 1px gray;
+    text-align: center;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+table td {
+    border: solid 1px rgb(15, 14, 14);
+    border-spacing: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    background-color: #aaa8a8;
+}
+
+.coluna {
+    background-color: #606060;
+}
+
+table caption {
+    color: #888;
+    font-size: 13pt;
+    font-weight: bolder;
+}
+
+table caption span {
+    display: block;
+    float: right;
+    color: rgba(0, 0, 0, 1);
+    font-size: 10pt;
+    padding-top: 10px;
+}
+
+/* aside lateral */
+aside#lateral {
+    background-color: #ddd;
+    display: block;
+    width: 330px;
+    float: right;
+    padding: 10px;
+    margin-top: 10px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, .5);
+}
+
+
+aside#lateral h1 {
+    font-family: "font-logo", sans-serif;
+    font-size: 20pt;
+    color: #606060;
+
+}
+
+aside#lateral h2 {
+    font-size: 13pt;
+    color: #cecece;
+    background-color: #fff;
+    padding: 5px;
+    background-color: #606060;
+}
+
+/* footer do site */
+footer {
+    clear: both;
+    border-top: solid 1px gray;
+
+}
+
+footer p {
+    text-align: center;
+}
+
+/* video config */
+div#video{
+    margin: 20px 40px;
+}
+
